@@ -13262,20 +13262,6 @@ a.text-white-200:hover, a.text-white-200:focus {
   border-radius: 4px 0px 0px 4px;
 }
 
-.footer-title {
-  font-weight: 900;
-  font-family: Raleway;
-  font-style: italic;
-}
-
-.copyright {
-  color: #FFFFFF99;
-}
-
-.policy {
-  color: #FFFFFFDE;
-}
-
 .modal.right .modal-dialog {
   position: fixed;
   right: 0;
@@ -13398,13 +13384,6 @@ a.text-white-200:hover, a.text-white-200:focus {
 
 .navbar-dark .navbar-toggler {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-.navbar-title {
-  font-size: 24px;
-  line-height: 29px;
-  padding: 0;
 }
 
 .shop-btn {
@@ -13514,16 +13493,9 @@ a.text-white-200:hover, a.text-white-200:focus {
   background: #F2F2F2;
 }
 
-.product-list {
-  margin-bottom: 0;
-  color: #0000009A;
-}
-
 .product-list li {
-  margin-bottom: 0;
   font-size: 24px;
   line-height: 28px;
-  position: relative;
 }
 
 @media (max-width: 767px) {
@@ -13552,7 +13524,6 @@ a.text-white-200:hover, a.text-white-200:focus {
 .product-list li .badge {
   padding: 0.3rem 0;
   color: #0000009A;
-  position: absolute;
   top: 0px;
 }
 
