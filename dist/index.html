@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>陶器</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" /> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- offcanvas -->
+  <div class="aside d-md-none d-block position-absolute bg-white py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-between mb-4">
+            <a href="#" class="arrow-left text-dark">
+              <span class="material-icons">
+                keyboard_backspace
+              </span>
+            </a>
+            <a class="text-dark" href="#" data-toggle="modal" data-target="#cartModal">
+              <i class="material-icons">shopping_cart</i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="accordion" id="accordionExample">
+            <div class="card border-0">
+              <div class="card-header bg-white p-0" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left bg-white d-flex justify-content-between" type="button"
+                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Product
+                    <span class="material-icons align-self-end js-rotate-if-collapsed">
+                      keyboard_arrow_down
+                    </span>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class=" list-unstyled ">
+                    <li class="text-craftsman-dark-light mb-3">
+                      <a href="product.html" class="btn-block"> ALL <span class="badge  align-top ">24</span></a>
+                    </li>
+                    <li class="text-craftsman-dark-light mb-3 ">
+                      <a href="product.html" class="btn-block">BOWL<span class="badge align-top  ">10</span></a>
+                    </li>
+                    <li class="text-craftsman-dark-light mb-3 ">
+                      <a href="#" class="btn-block">CUP<span class="badge  align-top ">8</span></a>
+                    </li>
+                    <li class="text-craftsman-dark-light mb-3 ">
+                      <a href="#" class="btn-block">PLATE<span class="badge align-top ">3</span></a>
+                    </li>
+                    <li class="text-craftsman-dark-light mb-3 ">
+                      <a href="#" class="btn-block">VASE<span class="badge  align-top ">3</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-link btn-block text-left">
+            Blog
+          </a>
+
+          <a href="#" class="btn btn-link btn-block text-left ">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- pc nav -->
+  <header class="header container position-relative">
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-md-light navbar-dark py-md-4 py-3 px-0">
+      <button class="navbar-toggler offcanvas py-0" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="material-icons ">
+          dehaze
+        </span>
+      </button>
+      <a class="navbar-brand navbar-title font-italic font-raleway font-weight-900 text-md-dark text-white"
+        href="index.html">CRAFTsMAN</a>
+      <a class="nav-link pr-0 py-0 order-md-3 text-white" href="#" data-toggle="modal" data-target="#cartModal">
+        <i class="material-icons">shopping_cart</i>
+      </a>
+      <div class="ml-auto d-md-block d-none">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 d-flex">
+          <li class="nav-item">
+            <a class="nav-link px-4  py-0 text-white" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4 py-0 text-white" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4 py-0 text-white" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- banner -->
+  <section class="banner container-fluid mb-md-8 mb-6 text-white">
+    <div class="row justify-content-end">
+      <div class="col-md-6 bg-cover banner-img position-absolute">
+      </div>
+      <div class="container">
+        <div class="row text-md-dark justify-content-start">
+          <div class="col-md-6">
+            <div class="slogan">
+
+              <p class="h1 font-weight-bold mb-4">Enjoy Your
+                <br>
+                Minimalist Lifestyle.</p>
+              <p class="h4 mb-md-6">
+                The best crafts in Taiwan. Get your free
+                <br>
+                shipping on the first order.
+              </p>
+              <a href="#" class="btn btn-craftsman-primary font-weight-bold shop-btn">Shop now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 介紹Introduction -->
+  <section class="introduction mb-md-8 mb-6">
+    <ul class="container introduction-group list-unstyled">
+      <li class="row" >
+        <div class="col-md-6 bg-cover mb-md-5 mb-3">
+          <div class="introduction-img"></div>
+        </div>
+        <div class="col-md-6 mb-md-5 mb-4 d-flex justify-content-md-center align-items-center">
+          <div class="introduction-text ">
+            <h4 class="font-weight-bold">Special Clays</h4>
+            <p class="text-craftsman-dark-light">
+              A general body formulation for contemporary
+              <br>
+              earthenware is 25% kaolin, 25% ball clay, 35%
+              <br>
+              quartz and 15% feldspar.</p>
+            <a href="#" class="text-craftsman-primary font-weight-bold">Learn More</a>
+          </div>
+        </div>
+      </li>
+      <li class="row flex-md-row-reverse" >
+        <div class="col-md-6 bg-cover mb-md-5 mb-3">
+          <div class="introduction-img"></div>
+        </div>
+        <div class="col-md-6 mb-md-5 mb-4 d-flex  justify-content-md-center align-items-center">
+          <div class="introduction-text">
+            <h4 class="font-weight-bold">Less is more</h4>
+            <p class="text-craftsman-dark-light">
+              Trimming pottery can transform a weighty Earth-
+              <br>
+              bound pot into one that is a pleasure to hold, look
+              <br>
+              at, and use.</p>
+            <a href="#" class="text-craftsman-primary font-weight-bold">Learn More</a>
+          </div>
+
+        </div>
+      </li>
+      <li class="row" >
+        <div class="col-md-6 bg-cover mb-md-0 mb-3">
+          <div class="introduction-img"></div>
+        </div>
+        <div class="col-md-6 d-flex  justify-content-md-center align-items-center">
+          <div class="introduction-text">
+            <h4 class="font-weight-bold">Marvelous Detail</h4>
+            <p class="text-craftsman-dark-light">
+              In Craftsman, the art director, working with
+              <br>
+              marketers, develops or creates an idea of a new
+              <br>
+              creation.</p>
+            <a href="#" class="text-craftsman-primary font-weight-bold">Learn More</a>
+
+          </div>
+
+        </div>
+
+      </li>
+    </ul>
+
+
+  </section>
+  <!-- 作者Author -->
+  <section class="author bg-cover mb-md-8 mb-6"
+    style="background-image: url(https://images.unsplash.com/photo-1579825317824-2cc3aa33f75a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);">
+    <div class="container">
+      <div class="row justify-content-md-between align-items-md-center author-content py-4">
+        <div class="col-md-4" >
+          <h2 class="font-weight-bold text-white author-slogan">
+            “I want to make the life
+            more simple by crafts.”
+          </h2>
+        </div>
+        <div class="col-md-4 align-self-md-center align-self-end">
+          <p class="text-white-100 mb-1">Art Director</p>
+          <h4 class="text-white mb-3">hsiao-Ming Chen</h4>
+          <ul class="list-unstyled d-flex">
+            <li><a href="#" class="text-decoration-none text-craftsman-primary  pr-4">Instagram</a></li>
+            <li><a href="#" class="text-decoration-none text-craftsman-primary ">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 輪播slider -->
+  <section class="slider mb-md-8 mb-6">
+    <div class="container">
+      <!-- carousel -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider d-block w-100">
+              <div class="row">
+                <div class="col-md-4 card border-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    class="card-img-top mb-2" alt="...">
+                  <div class="card-tag bg-transparent text-white font-weight-bold">ON SALE</div>
+                  <div class="card-body">
+                    <h4 class="card-title mb-1 text-craftsman-dark font-weight-bold">Tatami Cup</h4>
+                    <p class="card-text text-craftsman-dark">
+                      NT$1,080
+                      <span class="ml-2"><del>NT$1,200</del> </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 card border-0 d-md-block d-none">
+                  <img
+                    src="https://images.unsplash.com/photo-1523367310297-83064fc42a16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    class="card-img-top mb-2" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title mb-1 text-craftsman-dark font-weight-bold">Couple Collection</h4>
+                    <p class="card-text text-craftsman-dark">
+                      NT$2,800
+
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 card border-0 d-md-block d-none">
+                  <img
+                    src="https://images.unsplash.com/photo-1559810087-893a00a35608?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    class="card-img-top mb-2" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title mb-1 text-craftsman-dark font-weight-bold">Brotherhood Vase</h4>
+                    <p class="card-text text-craftsman-dark">
+                      NT$4,800
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider d-block w-100">
+              <div class="row">
+                <div class="col-md-4 card border-0 d-md-block d-none">
+                  <img
+                    src="https://images.unsplash.com/photo-1530006498959-b7884e829a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    class="card-img-top mb-2" alt="...">
+                  <div class="card-tag bg-transparent text-white font-weight-bold">ON SALE</div>
+                  <div class="card-body">
+                    <h4 class="card-title mb-1 text-craftsman-dark font-weight-bold">Baifan Bowl</h4>
+                    <p class="card-text text-craftsman-dark">
+                      NT$1,800
+                      <span class="ml-2"><del>NT$1,980</del> </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 card border-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1523976714396-3ee195e3b3a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    class="card-img-top mb-2" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title mb-1 text-craftsman-dark font-weight-bold">Limdae Cup</h4>
+                    <p class="card-text text-craftsman-dark">
+                      NT$2,400
+
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 card border-0 d-md-block d-none">
+                  <img
+                    src="https://images.unsplash.com/photo-1572003414030-4175bcadd3cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    class="card-img-top mb-2" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title mb-1 text-craftsman-dark font-weight-bold">Ceramic Vase</h4>
+                    <p class="card-text text-craftsman-dark">
+                      NT$3,600
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider d-block w-100">
+              <div class="row">
+                <div class="col-md-4 col-12 card border-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1523264067855-7b9941f18ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    class="card-img-top mb-2" alt="...">
+                  <div class="card-tag bg-transparent text-white font-weight-bold">ON SALE</div>
+                  <div class="card-body">
+                    <h4 class="card-title mb-1 text-craftsman-dark font-weight-bold">Hana Vase</h4>
+                    <p class="card-text text-craftsman-dark">
+                      NT$3,600
+                      <span class="ml-2"><del>NT$3,880</del> </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 d-md-block d-none card border-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1572003414077-38770ebec0a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    class="card-img-top mb-2" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title mb-1 text-craftsman-dark font-weight-bold">Kabi Mug</h4>
+                    <p class="card-text text-craftsman-dark">
+                      NT$980
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 card border-0 d-md-block d-none">
+                  <img
+                    src="https://images.unsplash.com/photo-1525973779373-015bdf68e579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    class="card-img-top mb-2" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title mb-1 text-craftsman-dark font-weight-bold">Shiro Plate</h4>
+                    <p class="card-text text-craftsman-dark">
+                      NT$1,200
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 訂閱subscription -->
+  <section class="subscription bg-cover py-md-9 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-12">
+          <p class="font-weight-bold  text-wrap mb-md-6 mb-4 text-white subscription-title">
+            Subscribe for news
+            <br>
+            and special offers!
+          </p>
+
+          <div class="input-group input-group-lg subscription-input-group">
+            <input type="text" class="subscription-input form-control text-white-100" placeholder="Your email address"
+              aria-label="Your email address" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-craftsman-primary font-weight-bold subscription-btn" type="button"
+                id="button-addon2">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-craftsman-dark py-md-5 py-4">
+    <div class="container">
+
+      <ul class="d-flex flex-md-row flex-column align-items-md-center text-white list-unstyled mb-0">
+        <li class="order-md-0  pr-md-3 pb-md-0 pb-6 h4 footer-title mb-0">CRAFTsMAN</li>
+        <li class="order-md-1 order-3 mr-md-auto text-white-100 h7">
+          © 2020. All Rights Reserved.
+        </li>
+        <li class="list-unstyled order-md-3 pb-md-0 pb-6 text-white-200 h7">
+          <ul class="list-unstyled d-md-flex">
+            <li class="pr-6 pb-md-0 pb-3">Purchase Policy</li>
+            <li class="pr-6 pb-md-0 pb-3">Privacy Policy</li>
+            <li>Terms &amp; Conditions</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!--購物車 cart Modal -->
+  <div class="cart modal right fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0 px-md-6 px-3">
+          <h1 class="modal-title font-weight-bold" id="exampleModalLabel">Cart List<span
+              class="badge  align-top text-craftsman-primary">3</span></h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="h1">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-unstyled mb-4">
+            <li class="cart-item d-flex px-md-6 px-3 mb-2">
+              <img
+                src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                class="cart-img" alt="...">
+              <div class="cart-item-text p-2 p-md-3 flex-grow-1 position-relative">
+                <a href="#" class="text-craftsman-dark delete position-absolute">
+                  <span class="material-icons">
+                    close
+                  </span>
+                </a>
+                <h6 class=" font-weight-bold text-craftsman-dark mb-1">
+                  Tatami Cup
+                </h6>
+                <p class="subtitle h7 text-craftsman-dark-light">NT$1,080<del>NT$1,200</del></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group cart-btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn">
+                      <span class="material-icons">
+                        remove
+                      </span>
+                    </button>
+                    <input type="text" size="1" value="1" class="text-center border-0">
+                    <button type="button" class="btn">
+                      <span class="material-icons">
+                        add
+                      </span>
+                    </button>
+                  </div>
+                  <p class="font-weight-bold h6 mb-0">
+                    NT$1,080
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="cart-item d-flex px-md-6 px-3">
+              <img
+                src="https://images.unsplash.com/photo-1530006498959-b7884e829a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                class="cart-img" alt="...">
+              <div class="cart-item-text p-2 p-md-3 flex-grow-1 position-relative">
+                <a href="#" class="text-craftsman-dark delete position-absolute">
+                  <span class="material-icons">
+                    close
+                  </span>
+                </a>
+                <h6 class=" font-weight-bold text-craftsman-dark mb-1">
+                  Baifan Bowl
+                </h6>
+                <p class="subtitle h7 text-craftsman-dark-light">NT$1,800</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group cart-btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn">
+                      <span class="material-icons">
+                        remove
+                      </span>
+                    </button>
+                    <input type="text" size="1" value="2" class="text-center border-0">
+                    <button type="button" class="btn">
+                      <span class="material-icons">
+                        add
+                      </span>
+                    </button>
+                  </div>
+                  <p class="font-weight-bold h6 mb-0">
+                    NT$3,600
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="cart-summary px-md-6 px-3">
+            <table class="table table-borderless mb-4">
+              <tbody>
+                <tr>
+                  <td class="cart-td h6 text-craftsman-dark-light">Subtotal</td>
+                  <td class="cart-td text-right h6 text-craftsman-dark-light">NT$4,680</td>
+                </tr>
+                <tr>
+                  <td class="cart-td h6 text-craftsman-dark-light">Shipping</td>
+                  <td class="cart-td text-right h6 text-craftsman-dark-light">NT$80</td>
+                </tr>
+                <tr class="cart-tr">
+                  <td class="cart-td h5 font-weight-bold text-craftsman-dark">Total</td>
+                  <td class="cart-td text-right h5 font-weight-bold text-craftsman-dark">NT$4,760</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <button type="button" class="checkout-btn btn  btn-craftsman-primary font-weight-bold d-md-block d-none">Checkout</button> -->
+            <a href="checkout-info.html"
+              class="checkout-btn btn  btn-craftsman-primary font-weight-bold d-md-block d-none">Checkout</a>
+
+          </div>
+
+        </div>
+        <div class="modal-footer border-0 d-md-none d-block">
+          <!-- <button type="button" class="checkout-btn btn  btn-craftsman-primary font-weight-bold">Checkout</button> -->
+          <a href="checkout-info.html" class="checkout-btn btn  btn-craftsman-primary font-weight-bold">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

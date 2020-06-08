@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>結帳-付款</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" /> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+    <header class="checkout-header py-3 py-md-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <h1 class="checkout-title mb-0">
+                        <a href="index.html"
+                            class="navbar-title font-italic font-raleway font-weight-900 text-craftsman-dark">
+                            Craftsman
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+<section class="payment checkout">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <!-- order summary下拉選單 -->
+            <div class="col-12 col-md-4 order-1 order-md-2 mb-4 mb-md-0">
+                <!-- mobile -->
+                <div class="accordion d-md-none d-block" id="accordionExample">
+                    <div class="order card border-0">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block d-flex " type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                    id="orderCollapse">
+                                    <span class="mr-auto text-craftsman-dark">Order Summary</span>
+                                    <span class="text-craftsman-dark font-weight-bold mr-2 text-block">NT$4,760</span>
+                                    <span class="material-icons text-craftsman-primary arrow">
+                                        keyboard_arrow_down
+                                    </span>
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <table class="table order-table">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <img src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                                                    alt="" class="table-img">
+                                            </td>
+                                            <td class="font-weight-bold text-vcraftsman-dark">Tatami Cup ×1</td>
+                                            <td class="text-right">NT$1,080</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="https://images.unsplash.com/photo-1530006498959-b7884e829a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                                                    alt="" class="table-img">
+                                            </td>
+                                            <td class="font-weight-bold text-vcraftsman-dark">Baifan Bowl ×2</td>
+                                            <td class="text-right">NT$3,600</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">Subtotal</td>
+                                            <td class="text-right">NT$4,680</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Shipping</td>
+                                            <td class="text-right">NT$80</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2" class="font-weight-bold ">Total</td>
+                                            <td class="text-right font-weight-bold ">NT$4,760</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- pc版 -->
+                <div class="order d-md-block d-none p-5">
+                    <table class="table order-table">
+                        <thead>
+                            <tr>
+                                <td>
+                                    <img src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                                        alt="" class="table-img">
+                                </td>
+                                <td class="font-weight-bold text-vcraftsman-dark">Tatami Cup ×1</td>
+                                <td class="text-right">NT$1,080</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://images.unsplash.com/photo-1530006498959-b7884e829a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                                        alt="" class="table-img">
+                                </td>
+                                <td class="font-weight-bold text-vcraftsman-dark">Baifan Bowl ×2</td>
+                                <td class="text-right">NT$3,600</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Subtotal</td>
+                                <td class="text-right">NT$4,680</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Shipping</td>
+                                <td class="text-right">NT$80</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="font-weight-bold ">Total</td>
+                                <td class="text-right font-weight-bold ">NT$4,760</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <!-- 主要資訊區 -->
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <div class="row">
+                    <!-- 麵包屑路徑 -->
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb  mb-4 mb-md-5">
+                                <li class="breadcrumb-item"><a href="#" class="text-craftsman-primary">Cart</a></li>
+                                <li class="breadcrumb-item">Information</li>
+                                <li class="breadcrumb-item active" aria-current="page">Payment</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- 表單區 -->
+                    <div class="col-12">
+                        <!-- confirmation資料確認 -->
+                        <div class="confirmation mb-4 mb-md-5">
+                            <h5>Information</h5>
+                            <div class="accordion" id="accordionInfo">
+                                <div class="card border-bottom-0 rounded-top rounded-bottom-0">
+                                    <div class="card-header" id="headingInfoOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block d-flex " type="button"
+                                                data-toggle="collapse" data-target="#collapseInfoOne"
+                                                aria-expanded="true" aria-controls="collapseInfoOne" id="infoCollapseOne">
+                                                <span class="text-craftsman-dark mr-3">Contact</span>
+                                                <span
+                                                    class="text-craftsman-dark-light h7 align-self-center text-block">Joanne@mail.com…</span>
+                                                <span class="material-icons text-craftsman-primary  ml-auto arrow">
+                                                    keyboard_arrow_down
+                                                </span>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseInfoOne" class="collapse" aria-labelledby="headingInfoOne"
+                                        data-parent="#accordionInfo">
+                                        <div class="card-body h7 text-craftsman-dark-light">
+                                            Joanne Lin
+                                            <br>
+                                            Joanne@mail.com
+                                            <br>
+                                            +886 912-345-678
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="accordion" id="accordionInfoTwo">
+                                <div class="card rounded-top-0 rounded-bottom ">
+                                    <div class="card-header" id="headingInfoTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block d-flex " type="button"
+                                                data-toggle="collapse" data-target="#collapseInfoTwo"
+                                                aria-expanded="true" aria-controls="collapseInfoTwo" id="infoCollapseTwo">
+                                                <span class="text-craftsman-dark mr-3">Ship to</span>
+                                                <span
+                                                    class="text-craftsman-dark-light h7 align-self-center text-block">3F.,
+                                                    No. 2, Ln. 1, Hello 2nd…</span>
+                                                <span class="material-icons text-craftsman-primary ml-auto arrow">
+                                                    keyboard_arrow_down
+                                                </span>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseInfoTwo" class="collapse" aria-labelledby="headingInfoTwo"
+                                        data-parent="#accordionInfoTwo">
+                                        <div class="card-body h7 text-craftsman-dark-light">
+                                            3F., No. 2, Ln. 1, Hello 2nd Rd.,
+                                            <br>
+                                            Woohoo Dist., Kaohsiung City 806,
+                                            <br>
+                                            Taiwan
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- 信用卡區 -->
+                        <div class="payment-form mb-4 mb-md-5">
+                            <h5>Credit Card</h5>
+                            <form>
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="inputCardNUm"
+                                        placeholder="Card number">
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="inputNameCard"
+                                        placeholder="Name on card">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 mb-0">
+                                        <input type="text" class="form-control" id="inputDate"
+                                            placeholder="Expiration date (MM / YY)">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-0">
+
+                                        <input type="number" class="form-control" id="inputCode"
+                                            placeholder="Security code">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- 按鈕區 -->
+                        <div class="form-row info-btn-group pb-3 pb-md-5">
+                            <div class="col-md-6 order-1 order-md-2">
+                                <a href="checkout-down.html" class="btn btn-craftsman-primary btn-block  ">
+                                    Pay now</a>
+                            </div>
+                            <div class="col-md-6 order-2 order-md-1">
+                                <a href="checkout-info.html" class="btn  btn-block text-craftsman-primary text-md-left">
+                                    <span class="material-icons align-bottom">
+                                        keyboard_arrow_left
+                                    </span>
+                                    Return to information
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--footer -->
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="footer list-unstyled py-3 mb-0 d-md-flex">
+                            <li class="text-craftsman-dark-light pb-3 mr-md-4">Purchase Policy</li>
+                            <li class="text-craftsman-dark-light pb-3 mr-md-4">Privacy Policy</li>
+                            <li class="text-craftsman-dark-light ">Terms & Conditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
