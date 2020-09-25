@@ -17,10 +17,9 @@ engine: ejs
 current: index
 mode: light ---->這個
 ---
-```
 並在layout.ejs的header上增加
 > <header class="header container position-relative <%- mode %>">
-
+```
 2. aside 打開時的滿版效果 
 
 3. mobile版在購物車打開時 aside 的關閉
@@ -37,6 +36,5 @@ mode: light ---->這個
 ```
 min-width: 768px @include media-breakpoint-up(md) { ... }
 max-width: 767.98px @include media-breakpoint-down(sm) { ... }
-```
 如果要再修改應該是要統一看是由大到小還是由小到大
-
+```
