@@ -18,7 +18,7 @@ current: index
 mode: light ---->這個
 ---
 並在layout.ejs的header上增加
-> <header class="header container position-relative <%- mode %>">
+<header class="header container position-relative <%- mode %>">
 ```
 2. aside 打開時的滿版效果 
 
