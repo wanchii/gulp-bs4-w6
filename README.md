@@ -1,6 +1,6 @@
 # w6-Layout-電商網站
  
-[網址](https://wanchii.github.io/gulp-bs4-w6/dist/index.html)
+[DEMO](https://wanchii.github.io/gulp-bs4-w6/dist/index.html)
 
 ### 網頁使用工具
 - gulp
