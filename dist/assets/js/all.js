@@ -7,34 +7,35 @@ $(document).ready(function () {
 // })
 
 $('.offcanvas').on('click', function (e) {
-  e.preventDefault(); //取消#錨點
-
+  e.preventDefault();
   $('body').addClass('open');
 });
-$(".arrow-left").click(function (e) {
-  e.preventDefault(); //取消#錨點
-
+$('.arrow-left').on('click', function (e) {
+  e.preventDefault();
   $('body').removeClass('open');
 });
-$("#orderCollapse").click(function (e) {
-  e.preventDefault(); //取消#錨點
-
+$('#orderCollapse').on('click', function (e) {
+  e.preventDefault();
   $(this).find('.arrow').toggleClass("upsideDown"); //用toggle偵測有沒有arrow-up的class去操控箭頭方向
 
   $(this).find('.text-block').toggle();
 });
-$("#infoCollapseOne").click(function (e) {
-  e.preventDefault(); //取消#錨點
-
+$('#infoCollapseOne').on('click', function (e) {
+  e.preventDefault();
   $(this).find('.arrow').toggleClass("upsideDown"); //用toggle偵測有沒有arrow-up的class去操控箭頭方向
 
   $(this).find('.text-block').toggle();
 });
-$("#infoCollapseTwo").click(function (e) {
-  e.preventDefault(); //取消#錨點
-
+$('#infoCollapseTwo').on('click', function (e) {
+  e.preventDefault();
   $(this).find('.arrow').toggleClass("upsideDown"); //用toggle偵測有沒有arrow-up的class去操控箭頭方向
 
   $(this).find('.text-block').toggle();
+});
+$('.cartShow').on('click', function (e) {
+  e.preventDefault();
+  $('body').removeClass('open');
+  $('#cartModal').modal('show');
+  $('#cartModal').modal('hide');
 });
 //# sourceMappingURL=all.js.map

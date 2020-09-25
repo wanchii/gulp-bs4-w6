@@ -28,7 +28,10 @@
                   keyboard_backspace
                 </span>
               </a>
-              <a class="text-dark" href="#" data-toggle="modal" data-target="#cartModal">
+              <!-- <a class="text-dark" href="#">
+                <i class="material-icons">shopping_cart</i>
+              </a> -->
+              <a class="text-dark cartShow" href="#">
                 <i class="material-icons">shopping_cart</i>
               </a>
 
@@ -87,7 +90,7 @@
       </div>
     </div>
     <!-- pc nav -->
-    <header class="header container position-relative">
+    <header class="header container position-relative light">
       <nav class="navbar navbar-expand-lg bg-transparent navbar-light  py-md-4 py-3 px-0">
         <button class="navbar-toggler offcanvas" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,9 +99,10 @@
           </span>
         </button>
         <a class="navbar-brand navbar-title font-italic font-raleway font-weight-900" href="index.html">CRAFTsMAN</a>
-        <a class="nav-link pr-0 py-0 order-md-3 text-dark" href="#" data-toggle="modal" data-target="#cartModal">
+        <a class="nav-link pr-0 py-0 order-md-3" href="#" data-toggle="modal" data-target="#cartModal">
           <i class="material-icons">shopping_cart</i>
         </a>
+        
         <div class="ml-auto d-md-block d-none">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0 d-flex">
             <li class="nav-item">
@@ -257,8 +261,9 @@
             </p>
 
             <div class="input-group input-group-lg subscription-input-group">
+              <label for="subscriptionEmail" class="sr-only">Email</label>
               <input type="text" class="subscription-input form-control text-white-100" placeholder="Your email address"
-                aria-label="Your email address" aria-describedby="button-addon2">
+                id="subscriptionEmail">
               <div class="input-group-append">
                 <button class="btn btn-craftsman-primary font-weight-bold subscription-btn" type="button"
                   id="button-addon2">Subscribe</button>
@@ -372,24 +377,19 @@
               </li>
             </ul>
             <div class="cart-summary px-md-6 px-3">
-              <table class="table table-borderless mb-4">
-                <tbody>
-                  <tr >
-                    <td class="cart-td h6 text-craftsman-dark-light">Subtotal</td>
-                    <td class="cart-td text-right h6 text-craftsman-dark-light">NT$4,680</td>
-                  </tr>
-                  <tr >
-                    <td class="cart-td h6 text-craftsman-dark-light">Shipping</td>
-                    <td class="cart-td text-right h6 text-craftsman-dark-light">NT$80</td>
-                  </tr>
-                  <tr class="cart-tr">
-                    <td class="cart-td h5 font-weight-bold text-craftsman-dark">Total</td>
-                    <td class="cart-td text-right h5 font-weight-bold text-craftsman-dark">NT$4,760</td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- <button type="button" class="checkout-btn btn  btn-craftsman-primary font-weight-bold d-md-block d-none">Checkout</button> -->
-              <a href="checkout-info.html"
+              <div class="d-flex justify-content-between text-craftsman-dark-light mb-3">
+                <h6>Subtotal</h6>
+                <h6>NT$4,680</h6>
+              </div>
+              <div class="d-flex justify-content-between text-craftsman-dark-light mb-4">
+                <h6>Shipping</h6>
+                <h6>NT$80</h6>
+              </div>
+              <div class="d-flex justify-content-between text-craftsman-dark font-weight-bold mb-4">
+                <h5>Total</h5>
+                <h5>NT$4,760</h5>
+              </div>
+              <a href="checkout_info.html"
                 class="checkout-btn btn  btn-craftsman-primary font-weight-bold d-md-block d-none">Checkout</a>
               
             </div>
@@ -397,7 +397,7 @@
           </div>
           <div class="modal-footer border-0 d-md-none d-block">
             <!-- <button type="button" class="checkout-btn btn  btn-craftsman-primary font-weight-bold">Checkout</button> -->
-            <a href="checkout-info.html" class="checkout-btn btn  btn-craftsman-primary font-weight-bold">Checkout</a>
+            <a href="checkout_info.html" class="checkout-btn btn  btn-craftsman-primary font-weight-bold">Checkout</a>
           </div>
         </div>
       </div>

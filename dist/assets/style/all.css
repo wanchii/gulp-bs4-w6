@@ -13172,6 +13172,27 @@ a.text-white-200:hover, a.text-white-200:focus {
   border-bottom-left-radius: 0rem;
 }
 
+.light {
+  color: #121212;
+}
+
+.dark .nav-link {
+  color: #fff !important;
+}
+
+@media (max-width: 767.98px) {
+  .dark .navbar-light .navbar-toggler {
+    color: #fff;
+  }
+  .dark .navbar-light .navbar-title {
+    color: #fff;
+  }
+}
+
+body {
+  position: relative;
+}
+
 .open .wrap {
   -webkit-transition: 1s ease;
   -o-transition: 1s ease;
@@ -13196,7 +13217,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  z-index: 1;
+  z-index: 3;
 }
 
 .aside .card-body {
@@ -13244,12 +13265,17 @@ a.text-white-200:hover, a.text-white-200:focus {
   background-repeat: no-repeat;
 }
 
+.subscription .form-control:focus {
+  color: #000;
+  background-color: #FFFFFF99;
+}
+
 .subscription-title {
   font-size: 48px;
   line-height: 64px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .subscription-title {
     font-size: 32px;
     line-height: 1.5;
@@ -13392,7 +13418,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   padding: 1rem 0;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .shop-btn {
     padding: 16px 45px;
     width: auto;
@@ -13408,7 +13434,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   height: 640px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .banner-img {
     height: 800px;
   }
@@ -13418,7 +13444,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   height: 578px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .banner {
     height: 723px;
   }
@@ -13430,7 +13456,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   text-align: center;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .banner .slogan {
     padding-top: 159px;
     padding-bottom: 236px;
@@ -13454,7 +13480,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   height: 400px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .introduction-img {
     height: 244px;
   }
@@ -13498,7 +13524,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   line-height: 28px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .product-list li {
     font-size: 16px;
   }
@@ -13527,7 +13553,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   top: 0px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .product-list li .badge {
     top: -5px;
   }
@@ -13554,7 +13580,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   height: 350px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .product-content .card:nth-child(1) img,
   .product-content .card:nth-child(5) img,
   .product-content .card:nth-child(9) img {
@@ -13568,7 +13594,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   height: 240px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .product-content .card:nth-child(2) img,
   .product-content .card:nth-child(6) img,
   .product-content .card:nth-child(7) img {
@@ -13582,7 +13608,7 @@ a.text-white-200:hover, a.text-white-200:focus {
   height: 480px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .product-content .card:nth-child(3) img,
   .product-content .card:nth-child(4) img,
   .product-content .card:nth-child(8) img {
@@ -13734,6 +13760,11 @@ a.text-white-200:hover, a.text-white-200:focus {
   height: 48px;
 }
 
+.order .order-border {
+  border-top: 2px solid #cecece;
+  border-bottom: 2px solid #cecece;
+}
+
 .order-table {
   color: #121212;
   margin-bottom: 0;
@@ -13859,19 +13890,6 @@ a.text-white-200:hover, a.text-white-200:focus {
 .confirmation .card-body {
   padding: 0 1rem 1rem 1rem;
   line-height: 21px;
-}
-
-.success .title a {
-  color: #fff;
-  font-family: Raleway;
-  font-weight: 900;
-  font-size: 24px;
-}
-
-@media (min-width: 768px) {
-  .success .title a {
-    color: #121212;
-  }
 }
 
 .success .slogan {
