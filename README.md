@@ -8,7 +8,7 @@ SCSS、gulp、jQuery、Bootstrap 4 、Material icon
 ####  第二版修正
 
 1. 透過變數去設計不同背景的文字顏色
-
+```
 在layout的子頁面上方新增變數
 ---
 title: product
@@ -17,34 +17,26 @@ engine: ejs
 current: index
 mode: light ---->這個
 ---
+```
 並在layout.ejs的header上增加
-<header class="header container position-relative <%- mode %>">
+> <header class="header container position-relative <%- mode %>">
 
 2. aside 打開時的滿版效果 
--在body設position-relative
-在>.aside 裡面z-index:3
 
 3. mobile版在購物車打開時 aside 的關閉
-在mobile版的連結刪掉data-toggle="modal" data-target="#cartModal"並新增class用JS去操控 modal 的開啟 
-
-$('.cart').on('click', function (e) {
-  e.preventDefault();
-  $('body').removeClass('open');
-  $('#cartModal').modal('show');
-  $('#cartModal').modal('hide');
-});
 
 4. table 排版的地方改用 flex
 
 5. order summary下拉選單的地方 使用 col-md-4 在視窗縮放時字會超出灰色區域
 原先 table 排版改用 flex 排版解決問題 
 
-
 6. input 對應的 label 並且使用 sr-only 這個class
 
 7. 使用 Bootstrap 的斷點 
 使用以下這兩個
+```
 min-width: 768px @include media-breakpoint-up(md) { ... }
 max-width: 767.98px @include media-breakpoint-down(sm) { ... }
+```
 如果要再修改應該是要統一看是由大到小還是由小到大
 
