@@ -2,8 +2,11 @@
  
 [網址](https://wanchii.github.io/gulp-bs4-w6/dist/index.html)
 
-### 網頁使用工具  
-SCSS、gulp、jQuery、Bootstrap 4 、Material icon
+### 網頁使用工具
+- gulp
+- Bootstrap4 + SCSS
+- jQuery
+- icon : Material icon
 
 ####  第二版修正
 
