@@ -1,4 +1,4 @@
-# w6-Layout-電商網站
+# 切版-陶瓷電商網站
  
 [DEMO](https://wanchii.github.io/gulp-bs4-w6/dist/index.html)
 
